@@ -7,7 +7,7 @@ function App() {
     event.preventDefault()
     const input = new window.FormData(event.target)
     let location = input.get('queryCity')
-    if(location === undefined) return
+    if (location === undefined) return
     setCity(location)
   }
   return (
@@ -24,7 +24,7 @@ function App() {
 
       </header>
       <aside>
-          <img src={data?.current.condition.icon}  alt={`icon with ${data?.current.condition.icon}`} />
+          <img src={data?.current.condition.icon} alt={`icon with ${data?.current.condition.icon}`}/>
           <h1>{data?.current.temp_c} ℃</h1>
       </aside>
       <footer>
@@ -36,5 +36,3 @@ function App() {
 }
 
 export default App
-
- 
